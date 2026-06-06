@@ -1,0 +1,12 @@
+{
+  "name": "tektaeats",
+  "version": "1.0.0",
+  "scripts": {
+    "server": "npm start --prefix backend",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently -n SERVER,CLIENT -c cyan,magenta \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
